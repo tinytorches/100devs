@@ -44,6 +44,8 @@
       
 // }
 
+
+
 // link for images: https://github.com/PokeAPI/sprites
 
 document.querySelector('button').addEventListener('click', pokedex)
