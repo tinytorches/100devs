@@ -1,0 +1,296 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************/
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: 10px;
+  font-family: "EB Garamond", "Times New Roman", serif;
+}
+
+h1 {
+  font-family: "Yellowtail", "Times New Roman", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  /* padding-left: 2rem; */
+}
+
+h2 {
+  /* font-family: "EB Garamond", "Times New Roman", serif; */
+  font-size: 8rem;
+  font-weight: 100;
+  color: white;
+}
+
+h3 {
+  font-size: 4rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.buttonWhite {
+  background: white;
+  color: black;
+  font-family: "EB Garamond", "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  letter-spacing: 1.4px;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  /* display: inline-block; */
+}
+
+.buttonBlack {
+  background: black;
+  color: white;
+  font-family: "EB Garamond", "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  letter-spacing: 1.4px;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  /* display: inline-block; */
+}
+
+.feature img {
+  width: 100px;
+}
+
+/*******************/
+/* BASE NAV
+/*******************/
+nav > div a {
+  font-size: 4rem;
+}
+
+/*******************/
+/* BASE HERO
+/*******************/
+#hero {
+  /* position: absolute; */
+  background-image: url(../img/salon-main-img.jpg);
+  background-position: center top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding: 10rem;
+}
+
+#hero div:nth-child(1) p {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  color: white;
+  margin: 2rem auto 4rem auto;
+}
+
+#hero .buttonBlack {
+  font-size: 1.2rem;
+}
+
+#hero div:nth-child(2) {
+  /* float: left; */
+  width: 200px;
+  height: 300px;
+  background-color: black;
+  margin-top: 10rem;
+  margin-left: 0%;
+}
+
+/* struggling to add white space above span  */
+#hero div:nth-child(2) p,
+#hero div:nth-child(2) span {
+  color: white;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  /* letter-spacing: 1.2px; */
+  padding: 2rem;
+  margin: 4rem auto;
+}
+
+#hero div:nth-child(2) .buttonWhite {
+  margin: 2rem;
+}
+
+/*******************/
+/* BASE SERVIVES
+/*******************/
+.feature p,
+#learn p {
+  font-family: "Open Sans", "Helvetica", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  /* margin-top: 2rem; */
+}
+
+/*******************/
+/* BASE LEARN
+/*******************/
+#learn,
+#learn div {
+  background-color: #f3f4f6;
+  width: 100% auto;
+  height: 500px;
+}
+
+#learn p {
+  margin-bottom: 5rem;
+}
+
+/*******************/
+/* BASE TEAM
+/*******************/
+.teammember {
+  width: 300px;
+}
+
+.teammember div {
+  background: black;
+}
+
+.teammember p {
+  font-size: 2rem;
+}
+
+.teammember span {
+  font-size: 1.2rem;
+}
+
+/******************************************/
+/* LAYOUT
+/*******************************************/
+
+/*******************/
+/* LAYOUT NAV
+/*******************/
+nav {
+  margin: 2rem 0.5rem 2rem 2rem;
+}
+
+nav div {
+  float: left;
+  width: 80%;
+}
+
+nav #logo {
+  width: 5%;
+}
+
+nav #navBook {
+  width: 15%;
+  /* adjust y axis */
+}
+
+#pages a {
+  float: left;
+  margin: 1rem 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/*******************/
+/* LAYOUT SERVICES
+/*******************/
+#services {
+  width: 100%;
+  text-align: center;
+  margin: 10rem auto;
+}
+
+#services div {
+  display: inline-block;
+  width: 30%;
+  padding: 2rem;
+}
+
+/*******************/
+/* LAYOUT LEARN
+/*******************/
+/* #learn {
+  margin: 10rem auto;
+} */
+
+#learn div {
+  float: left;
+  width: 50%;
+}
+
+#learn div:nth-child(1) {
+  padding: 10rem 5% 10rem 10rem;
+}
+
+#learn img {
+  max-width: 450px;
+  padding-top: 10rem;
+}
+
+/*******************/
+/* LAYOUT TEAM
+/*******************/
+#team {
+  width: 100%;
+  padding: 10rem 10rem 80rem 10rem;
+}
+
+#team div {
+  float: left;
+  width: 33.333%;
+  text-align: center;
+}
+
+.teammember img {
+  width: 300px;
+  margin: auto 2rem;
+}
+
+.teammember p {
+  background: black;
+  color: white;
+  width: 260px;
+  padding: 2rem 2rem 0 2rem;
+  transform: translateY(-20px);
+}
+
+.teammember span {
+  display: block;
+  background: black;
+  color: white;
+  width: 260px;
+  padding: 2rem;
+  transform: translateY(-20px);
+}
+
+/******************************************/
+/* ADDITIONAL STYLES
+/*******************************************/

@@ -1,0 +1,329 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/********************/
+/* NAV
+/********************/
+#logoNav {
+  width: 40px;
+}
+
+nav a {
+  color: white;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding-right: 30px;
+}
+
+nav button {
+  color: #66768a;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 8px 16px;
+  background: white;
+  border-radius: 4px;
+}
+
+/********************/
+/* MAIN
+/********************/
+#hero {
+  background-color: #66768a;
+}
+
+h1 {
+  color: white;
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-size: 6rem;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 80px;
+}
+
+#hero p {
+  color: white;
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-align: center;
+  padding: 0px 240px;
+}
+
+#hero span {
+  color: white;
+  display: block;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 20px 0px 40px 0px;
+}
+
+h2 {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 100px;
+}
+
+#yTho p,
+#volunteer p {
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.6;
+  text-align: center;
+  padding: 24px 360px 100px 360px;
+}
+
+#whyVisit {
+  background: #dbdfe2;
+  height: 600px;
+}
+
+.placeholderImg {
+  width: 240px;
+  height: 120px;
+  background: #66768a;
+  margin-left: 90px;
+}
+
+h3 {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 24px;
+}
+
+#visitTheGym p,
+#haveUsVisitYou p {
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.6;
+  text-align: center;
+  padding: 24px 0px;
+}
+
+#visitTheGym button {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding: 16px 40px;
+  margin-left: 140px;
+  background: #dbdfe2;
+  border: 1px solid #66768a;
+}
+
+#haveUsVisitYou button {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding: 16px 40px;
+  margin-left: 160px;
+  background: #dbdfe2;
+  border: 1px solid #66768a;
+}
+
+#volunteer button {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding: 16px 40px;
+  margin: -100px 540px 100px 540px;
+  background: white;
+  border: 1px solid #66768a;
+}
+
+/********************/
+/* FOOTER
+/********************/
+footer {
+  background: #161f2a;
+}
+
+h4 {
+  color: #526072;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-bottom: 8px;
+}
+
+#footerLeft a {
+  color: white;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+h5 {
+  color: white;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-bottom: 8px;
+}
+
+footer ul {
+  color: white;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+#footerRight a {
+  color: white;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+#legal span {
+  color: white;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+/******************************************/
+/* LAYOUT
+/*******************************************/
+
+/********************/
+/* NAV
+/********************/
+nav {
+  padding-top: 32px;
+  background: #66768a;
+}
+
+nav > section {
+  float: left;
+  width: 48%;
+  height: 80px;
+  background: #66768a;
+}
+
+nav > section:nth-child(2) {
+  float: left;
+  width: 4%;
+  height: 80px;
+  background: #66768a;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 40px;
+}
+
+li {
+  float: left;
+}
+
+nav button {
+  float: right;
+  margin-right: 40px;
+}
+
+/********************/
+/* MAIN
+/********************/
+#hero {
+  height: 400px;
+}
+
+main > section:nth-child(3) {
+  padding: 100px;
+}
+
+#visitTheGym {
+  float: left;
+  width: 50%;
+  padding: 0px 40px;
+}
+
+#haveUsVisitYou {
+  float: right;
+  width: 50%;
+  padding: 0px 40px;
+}
+
+/********************/
+/* FOOTER
+/********************/
+footer {
+  padding-top: 20px;
+}
+
+footer ul {
+  display: block;
+  padding: 20px 0px;
+  margin-left: 20px;
+}
+
+footer a {
+  padding-right: 20px;
+}
+
+#footerLeft,
+#legal {
+  float: left;
+}
+
+#footerRight {
+  float: right;
+}
+
+#contact ul {
+  display: block;
+}
+
+#legal {
+  width: 100%;
+  height: 40px;
+  padding: 20px;
+  background: #161f2a;
+}
+
+#logoFooter {
+  width: 60px;
+  float: right;
+  padding-right: 20px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

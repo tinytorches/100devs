@@ -1,0 +1,138 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+main > section > article > p,
+main > section + section p {
+  color: grey;
+  font-size: 1.6rem;
+}
+
+span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+header > nav a {
+  color: grey;
+  font-weight: 100;
+}
+
+header > nav > ul {
+  margin: 40px 0px;
+}
+
+/* header > nav > ul > li {
+  font-size: 1rem;
+} */
+
+ul {
+  list-style-type: none;
+}
+
+header > nav > ul > li {
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+hr {
+  margin: 10px 0px;
+  border-top: 1px solid lightgrey;
+}
+
+img {
+  margin: 16px 0px;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+}
+
+nav,
+main,
+aside {
+  float: left;
+}
+
+nav {
+  padding: 30px;
+  width: 10%;
+}
+
+main {
+  width: 50%;
+}
+
+aside {
+  padding: 0px 30px;
+  width: 40%;
+}
+
+header > nav > img {
+  width: 92px;
+}
+
+header > nav > ul {
+  padding: 0;
+}
+
+main > section > article > img {
+  width: 100%;
+  display: block;
+}
+
+footer {
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

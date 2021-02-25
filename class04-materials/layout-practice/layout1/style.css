@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  width: 100%;
+  height: 100px;
+  background: rgb(36, 39, 28);
+  /* border: 3px solid grey; */
+  clear: both;
+}
+/* clearing both means any floats to the left and right */
+
+section {
+  height: 300px;
+  width: 33.333%;
+  /* border: 2px solid grey; */
+  float: left;
+}
+
+.section1 {
+  background-color: rgb(242, 222, 116);
+}
+
+.section2 {
+  background-color: rgb(205, 171, 39);
+}
+
+.section3 {
+  background-color: rgb(242, 222, 116);
+}
+
+.section4 {
+  width: 50%;
+  background-color: rgb(121, 193, 187);
+}
+
+.section5 {
+  width: 50%;
+  background-color: rgb(64, 154, 177);
+}
+/* comma between names lets you repeat it in the same sections */
+
+/* this is some dry css */

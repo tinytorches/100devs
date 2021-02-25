@@ -1,0 +1,177 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+/* Setup for rem measurements */
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+
+/*******************************************/
+/* nav */
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: white;
+  border: none;
+  color: rgb(243, 164, 51);
+  display: block;
+  font-weight: 700;
+  padding: 0;
+  margin: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 1rem;
+}
+
+nav > a {
+  color: grey;
+  font-size: 1.5rem;
+  margin: 1rem 1rem 5rem 1rem;
+}
+
+nav > ul > li > a {
+  color: grey;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+nav > button {
+  font-size: 1.5rem;
+}
+
+/* main */
+main > span > a:first-of-type {
+  color: rgb(225, 182, 101);
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+main > h2 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+main > h2 a {
+  color: black;
+}
+
+main > p {
+  color: grey;
+  font-size: 2rem;
+}
+
+main > span {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+/* aside */
+aside > article {
+  border-bottom: 1px solid lightgrey;
+}
+
+aside h3 {
+  font-size: 3rem;
+}
+
+aside h3 > a {
+  color: black;
+}
+
+aside span {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+aside span > a {
+  color: black;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav,
+main,
+aside {
+  width: 10%;
+  float: left;
+  /* margin-top: 40px; */
+}
+
+/* TechCrunch logo */
+nav img {
+  width: 92px;
+  height: auto;
+}
+
+main {
+  width: 50%;
+}
+
+main img:first-of-type {
+  width: 8px;
+  margin-right: 8px;
+}
+
+/* Fintech image */
+main img {
+  width: 100%;
+}
+/* aside */
+aside {
+  width: 40%;
+}
+
+aside > article {
+  margin: 16px;
+}
+
+/* section {
+  clear: both;
+  margin-left: 10%;
+  width: 33.333%;
+}
+
+section > section {
+  float: right;
+}
+
+section > section > img {
+  width: 100%;
+}  */
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

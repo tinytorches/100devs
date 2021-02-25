@@ -1,0 +1,122 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header,
+footer {
+  width: 100%;
+  height: 100px;
+  background: rgb(95, 187, 213);
+}
+
+section {
+  height: 300px;
+  width: 33.333%;
+  float: left;
+}
+
+#sectionOne {
+  background-color: rgb(22, 159, 137);
+}
+
+#sectionTwo {
+  background-color: rgb(241, 172, 41);
+}
+
+#sectionThree {
+  background-color: rgb(246, 131, 35);
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media (max-width: 1400px) and (min-width: 1000px) {
+  header,
+  footer {
+    background: rgb(115, 150, 210);
+  }
+
+  #sectionOne {
+    width: 33.333%;
+    background-color: rgb(227, 161, 196);
+  }
+
+  #sectionTwo {
+    width: 66.666%;
+    background-color: rgb(215, 164, 154);
+  }
+
+  #sectionThree {
+    width: 100%;
+    background-color: rgb(199, 205, 246);
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 600px) {
+  header,
+  footer {
+    background-color: rgb(90, 26, 24);
+  }
+
+  #sectionOne {
+    width: 50%;
+    background-color: rgb(240, 186, 126);
+  }
+
+  #sectionTwo {
+    width: 50%;
+    background-color: rgb(250, 107, 101);
+  }
+
+  #sectionThree {
+    width: 100%;
+    background-color: rgb(213, 113, 62);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header,
+  footer {
+    background: rgb(36, 39, 28);
+  }
+
+  #sectionOne {
+    width: 100%;
+    background-color: rgb(242, 222, 116);
+  }
+
+  #sectionTwo {
+    width: 100%;
+    background-color: rgb(205, 171, 39);
+  }
+
+  #sectionThree {
+    width: 100%;
+    background-color: rgb(121, 193, 187);
+  }
+}

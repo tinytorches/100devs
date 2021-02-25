@@ -1,0 +1,324 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************/
+/* BASE STYLES
+/*******************************************/
+html {
+  /* max-width: 1600px; */
+  margin: auto;
+  font-size: 10px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Pirata One", "Times New Roman", serif;
+}
+
+h1 {
+  font-size: 8rem;
+}
+
+h2 {
+  font-size: 6rem;
+}
+
+h3 {
+  font-size: 4rem;
+  color: #ff8a04;
+}
+
+h4 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+p,
+span,
+a {
+  font-family: "Roboto", "Helvetica", sans-serif;
+}
+
+.button {
+  background: #ff8a04;
+  color: white;
+  font-weight: 400;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  /* display: inline-block; */
+}
+
+/********************/
+/* BASE - NAV
+/********************/
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/********************/
+/* BASE - HERO
+/********************/
+#hero {
+  background-image: url(../img/hero-background.jpg);
+  background-size: cover;
+  padding: 100px;
+}
+
+#searchBar input {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2px;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 1.4rem;
+}
+
+#socialData span {
+  font-size: 1.6rem;
+}
+
+/********************/
+/* BASE - ABOUT
+/********************/
+#about {
+  background-image: url(../img/aboutImgLeft.jpg);
+  background-size: cover;
+  background-position: left;
+  padding: 100px 200px 100px 400px;
+}
+
+#about span {
+  color: #ff8a04;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+#about p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding-bottom: 4rem;
+}
+
+/********************/
+/* BASE - ORDER
+/********************/
+#order span {
+  color: #ff8a04;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+#order li > a {
+  color: black;
+  font-size: 1.4rem;
+}
+
+#order li > #orderSelected {
+  color: #ff8a04;
+}
+
+/* .dot {
+  width: 25px;
+  height: 25px;
+  background-color: #e9d4bb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#selectedDot {
+  background-color: #ff8a04;
+} */
+
+/********************/
+/* BASE - ORDER
+/********************/
+#book span {
+  color: #ff8a04;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+#bookCall img {
+  width: 80px;
+  margin: 20px;
+}
+
+#bookCall p,
+.days p {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+/********************/
+/* BASE - TESTIMONIALS
+/********************/
+#testimonials span {
+  color: #ff8a04;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* having trouble getting a circle */
+#testimonials > img {
+  width: 10%;
+  /* height: 80px; */
+  border-radius: 50%;
+}
+
+#testimonials p {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/* trouble styling testimonials section due to specificity? */
+#testimonials .profession span + span {
+  color: grey;
+  font-weight: 300;
+}
+
+#testimonials img + img {
+  display: block;
+  width: 100%;
+}
+
+#testimonials p + p {
+  font-size: 1.6rem;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/********************/
+/* LAYOUT - NAV
+/********************/
+nav a {
+  float: right;
+  padding: 10px;
+}
+
+/********************/
+/* LAYOUT - HERO
+/********************/
+h1 {
+  width: 50%;
+}
+
+#searchBar {
+  width: 100%;
+}
+
+#searchBar * {
+  float: left;
+}
+
+#socialData * {
+  float: left;
+  padding: 10px;
+}
+
+/********************/
+/* LAYOUT - ABOUT
+/********************/
+#aboutImgLeft,
+#about {
+  float: left;
+}
+
+/********************/
+/* LAYOUT - ORDER
+/********************/
+#order {
+  width: 100%;
+  margin: 100px auto;
+  padding: 100px;
+  text-align: center;
+  background-color: #e8ecee;
+}
+
+#order span {
+  display: block;
+}
+
+#order ul {
+  text-align: center;
+}
+
+#order li {
+  padding: 30px;
+  display: inline-block;
+}
+
+#gallery a {
+  width: 300px;
+  overflow: hidden;
+  margin: 0;
+}
+
+#gallery img {
+  display: inline-block;
+  width: 200px;
+  overflow: hidden;
+}
+
+/********************/
+/* LAYOUT - BOOK
+/********************/
+#book {
+  width: 100%;
+  margin: 100px auto;
+  /* padding: 100px; */
+  text-align: center;
+}
+
+#bookCall {
+  margin-bottom: 20px;
+}
+
+.days {
+  float: left;
+  width: 50%;
+}
+
+#video img {
+  width: 80%;
+  margin: 4rem;
+}
+
+/********************/
+/* BASE - TESTIMONIALS
+/********************/
+#testimonials {
+  width: 100%;
+  margin: 100px auto;
+  /* padding: 100px; */
+  text-align: center;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

@@ -1,0 +1,78 @@
+/* inspiration */
+/* https://codepen.io/jeff-montinard/pen/qBNQPVP */
+
+* {
+  box-sizing: border-box;
+  background: rgb(138, 206, 233);
+}
+
+body {
+  border: 4px solid rgb(78, 203, 62);
+  margin: 40px 40px;
+}
+
+h1 {
+  margin: 40px 0px;
+  font-family: "PT Serif", sans-serif;
+  text-align: center;
+  color: white;
+}
+
+h2,
+p {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+section {
+  padding: 0px 40px;
+}
+
+p {
+  display: inline-block;
+  vertical-align: top;
+  width: 70%;
+  /* margin-right: 30%; */
+}
+
+/* helped sort out the float with p and img */
+/* https://jsfiddle.net/zZkpw/ */
+/* img needed to be above the p */
+img {
+  /* display: inline-block; */
+  /* vertical-align: top; */
+  width: 30%;
+  float: right;
+  /* overflow: auto; */
+}
+
+/* solution for vertical dividers between anchors */
+/* https://stackoverflow.com/questions/1936661/vertical-dividers-on-horizontal-ul-menu */
+ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+li:not(:first-child):before {
+  content: " | ";
+}
+
+a {
+  font-family: "Poppins", sans-serif;
+  color: rgb(78, 203, 62);
+  /* text-decoration: none; */
+}
+
+a:visited {
+  color: white;
+}
+
+footer {
+  margin: 40px 0px;
+}
