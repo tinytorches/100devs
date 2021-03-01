@@ -15,15 +15,29 @@ img {
     margin: 0 auto
 }
 
-.board {
+/* .board {
     display: flex;
     width: 100%;
     height: 100%;
+} */
+
+.flexbox-item {
+    width: 200px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: dfdfdf;
 }
 
 .topLeft {
-    float: left;
-    border-color: white;
+    min-height: 100px;
+}
+
+.top {
+    min-height: 200px;
+}
+
+.topRight {
+    min-height: 300px;
 }
 
 div {
