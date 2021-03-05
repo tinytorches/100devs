@@ -1,32 +1,3 @@
-//Create an a class and extend it - Can be anything you would like it to be! 
-
-// ideas
-// alcohol
-// vehicles
-// buildings
-// board games
-// video games
-// collectables
-// books
-
-// parent class
-class Alcohol {
-    constructor(type, abv, from, availability) {
-        this.type = type
-        this.abv = abv
-        this.from = from
-        this.availability = availability
-    }
-}
-// child class
-// class Beer extends Alcohol {
-//     constructor(type, abv, from, availability) {
-//         super(style)
-//     }
-// }
-// why use super over another this
-
-
 // CLASS EXAMPLE
 class Animal{
     constructor(name){
@@ -64,3 +35,13 @@ class Dog extends Animal{
 }
 
 let simba = new Dog('Simba', 'Sheperd')
+
+
+// reference material: https://boardgamegeek.com/
+class BoardGame {
+    constructor() {
+        // properties
+    }
+    // method()
+    
+}
