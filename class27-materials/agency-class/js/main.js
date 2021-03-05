@@ -55,14 +55,21 @@ class Back extends Contractor {
 let bob = new Contractor('Bob', 'Front-end')
 let simba = new Front('Simba', 'Front-end', 'React')
 let machi = new Back('The Machine', 'Back-end', 'Node')
+let tim = new Front('Tim', 'Front-end', 'React')
+
+// testing how to break...
+// tim._tech = 'Node'
 
 // we're typing sayHello() a lot
-let agency = [bob, simba, machi]
+let agency = [bob, simba, machi, tim]
 
 for (person of agency) {
     // every person has a sayHello() interface (method in this case)
     person.sayHello()
 }
+// person is made on its own
+// https://teamtreehouse.com/community/do-you-need-to-declare-your-counter-variable-in-a-for-loop-using-var
+
 // code just works because of poly-
 
 // parent class
