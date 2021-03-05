@@ -1,40 +1,52 @@
-// in-class work
-// We know we have a bunch of new animals coming to our farm
-// We want to keep track of all of them.
-// We want to make sure they all have a name because it's a loving farm and we want to know what kind of sound they make.
+// board game parent class
+// two children
 
-class Animal {
-    constructor(name) {
+// properties
+// [x] name
+// year
+// score/rating
+// players
+// play time
+// age
+// weight
+// designer
+// artist
+// publisher
+// type
+// category
+// mechanisms
+// reimplements
+// [x] short descrition (method) 
+// 
+
+
+class BoardGames {
+    constructor(name, minPlayer, maxPlayer, type) {
         this._name = name
+        this._minPlayer = minPlayer
+        this._maxPlayer = maxPlayer
+        this._type = type 
     }
-    // our getter; just going to get this._name
+
     get name() {
         return this._name
     }
-    speak() {
-        console.log(`${this._name} makes a sound`)
+
+    get minPlayer() {
+        return this._minPlayer
+    }
+
+    get maxPlayer() {
+        return this._maxPlayer
+    }
+
+    get type() {
+        return this._type
+    }
+
+    shortDescription() {
+        console.log(`${this._name} is a ${this._minPlayer} to ${this._maxPlayer} player ${this._type} game.`)
     }
 }
 
-// left off here
-// class Dog extends Animal
-
-class Cat extends Animal {
-    constructor(name, breed) {
-        super(name)
-        this._breed = breed
-    }
-    get breed() {
-        return this._breed
-    }
-    speak() {
-        super.speak()
-        console.log(`${this.name} meows`)
-    }
-}
-// didn't that feel weird? repetition?
-// if everything has a breed, then we should put it on the animal class
-// domestic animal and wild animal classes
-// it's also a way of thinking or organizing your code, not necessarily how to use the language
-
-let simba = new Animal('Simba')
+console.log(BoardGames)
